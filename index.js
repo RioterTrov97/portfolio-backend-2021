@@ -33,7 +33,7 @@ router.post('/send', (req, res) => {
 	const content = `name: ${name} \nemail: ${email} \nsubject: ${subject} \nmessage: ${message} `;
 	const mail = {
 		from: name,
-		to: 'basnet.trovtle@gmail.com', // Change to email address that you want to receive messages on
+		to: 'basnet.trovtle@gmail.com',
 		subject: 'New Portfolio Message',
 		text: content,
 	};
