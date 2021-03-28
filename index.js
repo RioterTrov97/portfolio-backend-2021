@@ -52,7 +52,7 @@ router.post('/send', (req, res) => {
 				{
 					from: 'basnet.trovtle@gmail.com',
 					to: email,
-					subject: 'Your email submission to Suman was successful',
+					subject: 'Your email has been sent to Suman successfully!',
 					text: `Thank you for contacting me! I'll be in touch with you as soon as possible.\n\nForm details\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
 					html: `<!doctype html>
 					<html>
@@ -162,7 +162,7 @@ router.post('/send', (req, res) => {
 										<tr>
 										  <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi ${name},</p>
-											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for contacting me. I'll get back to you as soon as possible. In the mean time, you can check my works in github public repo using the button below:</p>
+											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for reaching out to me regarding this opportunity. I'll get back to you as soon as possible. In the mean time, you can check my works in github public repo using the button below:</p>
 											<table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;">
 											  <tbody>
 												<tr>
@@ -184,6 +184,8 @@ router.post('/send', (req, res) => {
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 10px;">Message: ${message}</p>
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for giving me your precious time to view my portfolio. I hope you liked it. Looking forward to get in touch with you soon</p>
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Have a good day!</p>
+											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 3px;">Regards,</p>
+											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Suman Basnet</p>
 										  </td>
 										</tr>
 									  </table>
