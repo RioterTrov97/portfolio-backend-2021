@@ -183,9 +183,9 @@ router.post('/send', (req, res) => {
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 3px;">Email: ${email}</p>
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 10px;">Message: ${message}</p>
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for giving me your precious time to view my portfolio. I hope you liked it. Looking forward to get in touch with you soon</p>
-											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Have a good day!</p>
+											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 25px;">Have a good day!</p>
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 3px;">Regards,</p>
-											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Suman Basnet</p>
+											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 10px;">Suman Basnet</p>
 										  </td>
 										</tr>
 									  </table>
