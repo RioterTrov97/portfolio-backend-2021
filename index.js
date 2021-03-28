@@ -17,11 +17,10 @@ const transport = {
 
 const transporter = nodemailer.createTransport(transport);
 
-transporter.verify((error, success) => {
+transporter.verify((error) => {
 	if (error) {
 		console.log(error);
 	} else {
-		console.log(success);
 		console.log('Server is ready to take messages');
 	}
 });
@@ -54,7 +53,7 @@ router.post('/send', (req, res) => {
 					from: 'basnet.trovtle@gmail.com',
 					to: email,
 					subject: 'Your email submission to Suman was successful',
-					text: `Thank you for contacting me! I'll be in touch as soon as possible.\n\nForm details\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
+					text: `Thank you for contacting me! I'll be in touch with you as soon as possible.\n\nForm details\nName: ${name}\nEmail: ${email}\nMessage: ${message}`,
 					html: `<!doctype html>
 					<html>
 					  <head>
@@ -163,7 +162,7 @@ router.post('/send', (req, res) => {
 										<tr>
 										  <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;">
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Hi ${name},</p>
-											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for contacting me. I'll get back with you as soon as possible. In the mean time, you can check my works in github public repo using the button below:</p>
+											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for contacting me. I'll get back to you as soon as possible. In the mean time, you can check my works in github public repo using the button below:</p>
 											<table border="0" cellpadding="0" cellspacing="0" class="btn btn-primary" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; box-sizing: border-box;">
 											  <tbody>
 												<tr>
@@ -171,7 +170,7 @@ router.post('/send', (req, res) => {
 													<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: auto;">
 													  <tbody>
 														<tr>
-														  <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; background-color: #3498db; border-radius: 5px; text-align: center;"> <a href="https://github.com/RioterTrov97" target="_blank" style="display: inline-block; color: #ffffff; background-color: #3498db; border: solid 1px #3498db; border-radius: 5px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-transform: capitalize; border-color: #3498db;">My Gtihub Public Repo</a> </td>
+														  <td style="font-family: sans-serif; font-size: 14px; vertical-align: top; background-color: #3498db; border-radius: 5px; text-align: center;"> <a href="https://github.com/RioterTrov97" target="_blank" style="display: inline-block; color: #ffffff; background-color: #3498db; border: solid 1px #3498db; border-radius: 5px; box-sizing: border-box; cursor: pointer; text-decoration: none; font-size: 14px; font-weight: bold; margin: 0; padding: 12px 25px; text-transform: capitalize; border-color: #3498db;">My Github Public Repo</a> </td>
 														</tr>
 													  </tbody>
 													</table>
@@ -179,11 +178,11 @@ router.post('/send', (req, res) => {
 												</tr>
 											  </tbody>
 											</table>
-											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 5px;">The email that you sent had the following details:</p>
+											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 5px;">The email that you sent me through contact form had the following details:</p>
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 3px;">Name: ${name}</p>
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 3px;">Email: ${email}</p>
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 10px;">Message: ${message}</p>
-											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for giving your precious time to view my portfolio. I hope you liked it. Looking forward to get in touch with you soon</p>
+											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Thank you for giving me your precious time to view my portfolio. I hope you liked it. Looking forward to get in touch with you soon</p>
 											<p style="font-family: sans-serif; font-size: 14px; font-weight: normal; margin: 0; Margin-bottom: 15px;">Have a good day!</p>
 										  </td>
 										</tr>
@@ -204,7 +203,7 @@ router.post('/send', (req, res) => {
 									</tr>
 									<tr>
 									  <td class="content-block powered-by" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
-										Powered by <a href="https://portfolio-site-2021.web.app/" style="color: #999999; font-size: 12px; text-align: center; text-decoration: none;">Suman Designs</a>.
+										Powered by <a href="https://portfolio-site-2021.web.app/" style="color: #999999; font-size: 12px; text-align: center; text-decoration: none;">SumanDesign2021</a>.
 									  </td>
 									</tr>
 								  </table>
