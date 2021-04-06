@@ -1,3 +1,9 @@
-This project is the backed of my portfolio site and mainly used for mailing service of contact form. This is created with love using Node js. You can view the live demo of my portfolio site at the link below:
+# Portfolio - Personal Website
 
-[Live Demo of my Portfolio](https://portfolio-site-2021.web.app/)
+This is my personal portfolio site and a full stack MERN application developed with MongoDB, Express, React, Redux, and Node.
+
+The frontend code of the app can be found in this repo:
+[Portfolio Frontend Repo](https://github.com/RioterTrov97/portfolio-site-2021)
+
+The live demo of this application can be viewed with the link:
+[Live Demo](https://portfolio-site-2021.web.app/)
